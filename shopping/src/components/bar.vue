@@ -10,6 +10,7 @@
 </template>
 <script>
 import Bus from '../../common/js/bus'
+// import mapGetters fron 'vuex'
 export default {
     name:'bar',
     props:['name'],
@@ -19,6 +20,7 @@ export default {
             
         }
     },
+
     methods:{
         btne(){
             console.log(this.$emit)
