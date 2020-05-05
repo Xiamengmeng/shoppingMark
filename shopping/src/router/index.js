@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import indexPage from '@/components/indexPage'
-
+import mapset from '@/components/mapset'
 Vue.use(Router)
 
 export default new Router({
@@ -16,6 +16,11 @@ export default new Router({
       path: '/indexPage',
       name: 'indexPage',
       component: indexPage
+    },
+    {
+      path: '/mapset',
+      name: 'mapset',
+      component: mapset
     }
   ]
 })
