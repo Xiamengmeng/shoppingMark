@@ -31,6 +31,32 @@ export default {
         btnShow(msg){
             console.log(msg)
             this.showmessage=msg
+            // this.$ajax.post('/studentInfo/getStudentInfos')
+            // .then(function(res){
+            //     console.log(res.data)
+            // })
+            // .catch(function(res){
+            //     console.log(res)
+            // })
+
+
+            this.axios.post('www.baidu.com',this.qs.stringify({'name':'xiaoming','sex':'nan'}),{
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    }
+                    })
+                    .then(function(res){
+                        console.log(res.data)
+                            //控制台打印请求成功时返回的数据
+                        //bind(this)可以不用
+                    }.bind(this))
+                    .catch(function(err){
+                        if(err.response) {
+                        console.log(err.response)
+                            //控制台打印错误返回的内容
+                        }
+                            //bind(this)可以不用
+                    }.bind(this))
         }
     },
     watch:{
