@@ -57,7 +57,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 li{
     border: 1px solid red;
     float: left;
