@@ -55,6 +55,10 @@
     <div class="amap-wrapper">
       <el-amap class="amap-box" :vid="'amap-vue'"></el-amap>
     </div>
+    <div class="flfix" @click="revers">
+        <img src="https://www.svw-volkswagen.com/_nuxt/img/87ce798.png" alt="">
+    </div>
+
 </section>
 </template>
 <script>
@@ -91,6 +95,9 @@ export default {
         },
          handleChange(value) {
         console.log(value);
+      },
+      revers(){
+          
       }
     }
 }
@@ -139,6 +146,19 @@ export default {
   .amap-wrapper {
   width: 800px;
   height: 500px;
+}
+.flfix{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    background-color: #1EB1ED;
+    z-index: 9999;
+}
+.flfix img{
+    margin: 15px;
 }
 </style>
 <style>  
