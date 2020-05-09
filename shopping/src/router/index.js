@@ -4,6 +4,7 @@ import index from '@/components/index'
 import HelloWorld from '@/components/HelloWorld'
 import indexPage from '@/components/indexPage'
 import mapset from '@/components/mapset'
+import duplicateRemoval from '@/components/duplicateRemoval'
 Vue.use(Router)
 
 export default new Router({
@@ -27,6 +28,11 @@ export default new Router({
       path: '/mapset',
       name: 'mapset',
       component: mapset
+    },
+    {
+      path:'/duplicateRemoval',
+      name:'/duplicateRemoval',
+      component:duplicateRemoval
     }
   ]
 })
