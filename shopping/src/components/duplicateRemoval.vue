@@ -1,11 +1,14 @@
 <template>
   <section>
       <h1>{{message}}</h1>
+      <h2>{{this.$store.state.age.li}}</h2>
+      <h3>{{this.$store.state.name}}</h3>
       <button @click="btn()">点击</button>
   </section>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
     data(){
         return{
@@ -20,7 +23,10 @@ export default {
     methods:{
         btn(){
             // console.log(Array.from(new Set(message)));
-        }
+            this.$store.commit('changeName')
+        },
+        ...mapMutations(['changeName'])
+        
     }
 
 
