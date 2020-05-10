@@ -5,6 +5,7 @@ import HelloWorld from '@/components/HelloWorld'
 import indexPage from '@/components/indexPage'
 import mapset from '@/components/mapset'
 import duplicateRemoval from '@/components/duplicateRemoval'
+import shoppingCart from '@/components/shoppingCart'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,11 @@ export default new Router({
       path:'/duplicateRemoval',
       name:'/duplicateRemoval',
       component:duplicateRemoval
+    },
+    {
+      path:'/shoppingCart',
+      name:'/shoppingCart',
+      component:shoppingCart
     }
   ]
 })
