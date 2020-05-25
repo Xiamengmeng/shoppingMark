@@ -26,6 +26,7 @@ export default {
             this.$store.commit('changeName')
         },
         ...mapMutations(['changeName'])
+        // console.log(this.message)                
         
     }
 
