@@ -96,6 +96,11 @@ export default {
     //   console.log("%c%s", "color:red","data   : " + this.$data); 
     //   console.log("%c%s", "color:red","message: " + this.message)
     // }
+
+
+    // 面试题总结
+    // 1、输入网址之后点击回车键发生了什么
+    // 
 }
 </script>
 
