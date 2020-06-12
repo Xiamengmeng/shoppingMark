@@ -6,6 +6,7 @@ import indexPage from '@/components/indexPage'
 import mapset from '@/components/mapset'
 import duplicateRemoval from '@/components/duplicateRemoval'
 import shoppingCart from '@/components/shoppingCart'
+import login from '@/components/login'
 Vue.use(Router)
 
 export default new Router({
@@ -39,6 +40,11 @@ export default new Router({
       path:'/shoppingCart',
       name:'/shoppingCart',
       component:shoppingCart
+    },
+    {
+      path:'/login',
+      name:'/login',
+      component:login
     }
   ]
 })
