@@ -40,7 +40,7 @@ export default {
 
 
 
-
+// vue的八个钩子函数
 
     // beforeCreate: function() {
     //   console.group('------beforeCreate创建前状态------');
